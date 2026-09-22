@@ -20,8 +20,14 @@ export default function SchoolProjectsPage() {
 
 	return (
 		<>
-			<h1>School Projects</h1>
-			{error ? <p>{error}</p> : <ProjectList projects={projects} />}
+			<h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">School Projects</h1>
+			{error ? (
+				<p className="mt-8 text-lg leading-8 text-slate-600">{error}</p>
+			) : (
+				<div className="mt-10">
+					<ProjectList projects={projects} />
+				</div>
+			)}
 		</>
 	);
 }

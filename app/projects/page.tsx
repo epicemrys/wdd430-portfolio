@@ -20,8 +20,14 @@ export default function ProjectsPage() {
 
 	return (
 		<>
-			<h1>Projects Overview</h1>
-			{error ? <p>{error}</p> : <ProjectList projects={projects} />}
+			<h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">Projects Overview</h1>
+			{error ? (
+				<p className="mt-8 text-lg leading-8 text-slate-600">{error}</p>
+			) : (
+				<div className="mt-10">
+					<ProjectList projects={projects} />
+				</div>
+			)}
 		</>
 	);
 }

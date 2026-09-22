@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.10.0",
     "clsx": "^2.1.1",
     "next": "16.3.4",
     "react": "19.2.8",
@@ -25,6 +26,7 @@
     "typescript": "^5"
   },
   "allowScripts": {
-    "unrs-resolver@1.12.2": true
+    "unrs-resolver@1.12.2": true,
+    "bufferutil@4.1.0": true
   }
 }
